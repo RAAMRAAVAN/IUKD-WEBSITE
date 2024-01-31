@@ -21,6 +21,6 @@ export const Home = () => (<>
   </Box>
   <AboutUs />
   <OurServices />
-  {/* <ConnectWithUs/> */}
+  <ConnectWithUs/>
   <Footers />
 </>)
