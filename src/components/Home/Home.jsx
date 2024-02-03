@@ -6,9 +6,10 @@ import { OurServices } from "./OurServices/OurServices";
 import { ConnectWithUs } from "./ConnectWithUs";
 import { Footers } from "../Footer/Footers";
 import ImageSlider from "../ContentSlider/ImageSlider";
+import { TextLocal } from "../TextLocal";
 
 export const Home = () => (<>
-
+  <TextLocal/>
   <Header />
   <ImageSlider />
   <Box sx={{ display: "flex", justifyContent: "center", paddingY: "20px" }}>

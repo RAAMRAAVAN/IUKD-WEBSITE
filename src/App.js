@@ -18,6 +18,7 @@ import { ReconstructiveSurgeries } from './components/Services/ReconstructiveSur
 import { UrologicalCancerClinic } from './components/Services/UrologicalCancerClinic';
 import { MaleFemaleUrinaryProblem } from './components/Services/MaleFemaleUrinaryProblem';
 import { MaleFertilitySexualProblem } from './components/Services/MaleFertilitySexualProblem';
+import { Birthday } from './components/BirthdayMessage/Birthday';
 function App() {
   return (
     <Provider store={store}>  
@@ -37,6 +38,8 @@ function App() {
             <Route path="/urologicalcancerclinic" element={<UrologicalCancerClinic/>}/>
             <Route path="/malefemaleurinaryproblem" element={<MaleFemaleUrinaryProblem/>}/>
             <Route path="/malefertilitysexualproblem" element={<MaleFertilitySexualProblem/>}/>
+            <Route path="/admin" element={<Login/>}/>
+            {/* <Route path="/birthday" element={<Birthday/>}/> */}
           </Routes>
       </BrowserRouter>
     </Provider>
