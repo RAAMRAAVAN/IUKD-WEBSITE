@@ -1,10 +1,14 @@
 import { Box, Button, TextField, Typography } from "@mui/material"
 import { Footers } from "../Footer/Footers"
 import { FixedHeader } from "../Header/FixedHeader"
+// import { ImageSlider} from "./ContentSlider/ImageSlider"
+import { Add } from "./Add"
+import ImageSlider from "./ContentSlider/ImageSlider"
 
 export const Careers = () => {
     return (<>
         <FixedHeader page="Careers"/>
+        <ImageSlider/>
         <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }} paddingY={4}>
             <Box width='90%'>
                 <Typography fontSize="18px" fontWeight='bold' >Thank you for your interest in working with us. Send us your application by filling out the application form . We will get in touch with you shortly</Typography>

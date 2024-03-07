@@ -10,22 +10,12 @@ const images = [
   {
     label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath:
-      './images/teamiukd.jpg',
+      'posts/We Are Hiring  iukd final.gif',
   },
   {
     label: 'Bird',
     imgPath:
-      './images/teamiukd.jpg',
-  },
-  {
-    label: 'Bali, Indonesia',
-    imgPath:
-      './images/teamiukd.jpg',
-  },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      './images/teamiukd.jpg',
+      'posts/We Are Hiring  iukd final.gif',
   },
 ];
 
@@ -47,7 +37,7 @@ function ImageSlider() {
   };
 
   return (
-    <Box sx={{ maxWidth: '100%', flexGrow: 1, marginY:1 }}>
+    <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
       {/* <Paper
         square
         elevation={0}
@@ -74,11 +64,11 @@ function ImageSlider() {
               <Box
                 component="img"
                 sx={{
-                  // height: '80vh',
+                  height: '80vh',
                   display: 'flex',
                   maxWidth: '100%',
                   overflow: 'hidden',
-                  // border:"1px black solid"
+                  border:"1px black solid"
                 }}
                 src={step.imgPath}
                 alt={step.label}

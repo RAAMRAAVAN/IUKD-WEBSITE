@@ -10,26 +10,26 @@ const images = [
   {
     label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath:
-      './images/teamiukd.jpg',
+      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
   },
   {
     label: 'Bird',
     imgPath:
-      './images/teamiukd.jpg',
+      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
   },
   {
     label: 'Bali, Indonesia',
     imgPath:
-      './images/teamiukd.jpg',
+      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
   },
   {
     label: 'Goč, Serbia',
     imgPath:
-      './images/teamiukd.jpg',
+      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
   },
 ];
 
-function ImageSlider() {
+function SwipeableTextMobileStepper() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -47,7 +47,7 @@ function ImageSlider() {
   };
 
   return (
-    <Box sx={{ maxWidth: '100%', flexGrow: 1, marginY:1 }}>
+    <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
       {/* <Paper
         square
         elevation={0}
@@ -69,16 +69,16 @@ function ImageSlider() {
         interval={10000}
       >
         {images.map((step, index) => (
-          <div key={step.label} style={{display:"flex", justifyContent:"center", width:"100%"}}>
+          <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
                 sx={{
-                  // height: '80vh',
-                  display: 'flex',
+                  height: '70vh',
+                  display: 'block',
                   maxWidth: '100%',
                   overflow: 'hidden',
-                  // border:"1px black solid"
+                  width: '100%',
                 }}
                 src={step.imgPath}
                 alt={step.label}
@@ -120,4 +120,4 @@ function ImageSlider() {
   );
 }
 
-export default ImageSlider;
+export default SwipeableTextMobileStepper;

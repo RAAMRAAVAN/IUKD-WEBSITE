@@ -113,9 +113,9 @@ export const NavBar = () => {
           color="inherit"
           aria-label="menu"
           onClick={toggleDrawer(true)}
-          sx={{ display: { xs: 'block', sm:'none'} }}
+          sx={{ display: { xs: 'block', sm:'none', position:"absolute",} }}
         >
-          <MenuIcon />
+          <MenuIcon style={{position:"relative", zIndex:"10", top:"-57", left:"10", right:"10"}}/>
         </IconButton>
        <Drawer
         anchor="left"
