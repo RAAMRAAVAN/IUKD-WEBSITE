@@ -7,12 +7,12 @@ export const OurServices = () => {
                 <Typography variant="h4">Our Services</Typography>
                 <Typography sx={{display:"flex", width:"40%"}} textAlign='center'>Institute of Urology and Kidney Diseases is the only center in the entire North Eastern Region of India dedicated only to Urological Problems</Typography>
                 <Grid  spacing={2} container marginY={5}>
-                    <Service/>
-                    <Service/>
-                    <Service/>
-                    <Service/>
-                    <Service/>
-                    <Service/>
+                    <Service service="Endo Urological Surgeries" icon="endo_urology.gif" navigate="/endourologicalsurgeries"/>
+                    <Service service="Laparoscopic Uro Surgeries" icon="lapro.gif" navigate="/laparoscopicurosurgeries"/>
+                    <Service service="Reconstructive Surgeries" icon="lapro.gif" navigate="/reconstructivesurgeries"/>
+                    <Service service="Urological Cancer Clinic" icon="lapro.gif" navigate="/urologicalcancerclinic"/>
+                    <Service service="Male Female Urinary Problem" icon="lapro.gif" navigate="/malefemaleurinaryproblem"/>
+                    <Service service="Male Fertility Sexual Problem" icon="lapro.gif" navigate="/malefertilitysexualproblem"/>
                 </Grid>
             </Box>
 

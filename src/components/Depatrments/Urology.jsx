@@ -21,9 +21,10 @@ export const Urology = () => {
             </Grid >
             <Grid container display='flex' flexDirection='row' width='90%'>
             <Typography variant="h6" marginY={5}>Meet </Typography> <Typography marginY={5} variant="h5" sx={{color:"darkgreen"}}>Our Specialist</Typography>
-            <ImageSlider/>
+            
             </Grid>
         </Box>
+        <ImageSlider/>
         <Footers />
     </>)
 }

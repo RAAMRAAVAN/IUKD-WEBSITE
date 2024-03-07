@@ -69,16 +69,16 @@ function ImageSlider() {
         interval={10000}
       >
         {images.map((step, index) => (
-          <div key={step.label}>
+          <div key={step.label} style={{display:"flex", justifyContent:"center", width:"100%"}}>
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
                 sx={{
                   height: '80vh',
-                  display: 'block',
+                  display: 'flex',
                   maxWidth: '100%',
                   overflow: 'hidden',
-                  width: '100%',
+                  border:"1px black solid"
                 }}
                 src={step.imgPath}
                 alt={step.label}

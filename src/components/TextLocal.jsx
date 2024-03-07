@@ -25,5 +25,5 @@ export const TextLocal = () => {
         });
     },[])
     
-    return(<>Message Sending</>)
+    return(<></>)
 } 
