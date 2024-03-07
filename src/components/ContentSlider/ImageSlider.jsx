@@ -15,18 +15,15 @@ const images = [
   {
     label: 'Bird',
     imgPath:
-      './images/teamiukd.jpg',
+      'posts/live_program_070324.jpg',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'Bird',
     imgPath:
-      './images/teamiukd.jpg',
-  },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      './images/teamiukd.jpg',
-  },
+      'posts/Phone in Live 070324.jpg',
+  }
+
+
 ];
 
 function ImageSlider() {
@@ -47,7 +44,7 @@ function ImageSlider() {
   };
 
   return (
-    <Box sx={{ maxWidth: '100%', flexGrow: 1, marginY:1 }}>
+    <Box sx={{ maxWidth: '100%', flexGrow: 1, marginY: 1 }}>
       {/* <Paper
         square
         elevation={0}
@@ -69,12 +66,12 @@ function ImageSlider() {
         interval={10000}
       >
         {images.map((step, index) => (
-          <div key={step.label} style={{display:"flex", justifyContent:"center", width:"100%"}}>
+          <div key={step.label} style={{ display: "flex", justifyContent: "center", width: "100%" }}>
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
                 sx={{
-                  // height: '80vh',
+                  height: '80vh',
                   display: 'flex',
                   maxWidth: '100%',
                   overflow: 'hidden',

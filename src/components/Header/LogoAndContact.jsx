@@ -13,10 +13,10 @@ export const LogoAndContact = () => {
         alignItems: 'center', // Corrected typo from alignItem to alignItems
       }} >
         <Box display='flex'>
-          <Box sx={{ display: "flex", width: '100 vw', height: {xl:"10vh", xs:"8vh"}, alignItem: "center" }}>
+          <Box sx={{ display: "flex", width: '100 vw', height: {xl:"10vh", xs:"7vh"}, alignItem: "center" }}>
             <img
               style={{ flex: '1', width: '100%', height: '100%' }}
-              src="./images/icon_logo.gif"
+              src="./images/iukd_logo.jpg"
               alt="Image 1"
             />
           </Box>
